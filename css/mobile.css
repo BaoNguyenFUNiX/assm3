@@ -1,0 +1,103 @@
+.nav-container {
+  display: grid;
+}
+.funix {
+  display: none;
+}
+.avaa {
+  display: none;
+}
+.nav-container a {
+  border: 0;
+}
+.nav-container a:first-child {
+  border: 0;
+}
+.nav-container a {
+  padding: 10px;
+}
+.abt-container {
+  display: block;
+}
+.input-group {
+  width: 15rem;
+}
+.details-container {
+  display: block;
+}
+.view-more {
+  display: block;
+}
+.hobby {
+  padding: 0;
+}
+/* 
+.row{
+     display: block;
+     border: 0;
+     margin: 0;
+     padding: 0;
+}
+.row-cnt{
+     border: 0;
+     padding: 20px 0;
+     margin: 0;
+     border-bottom: 2px solid #d6c08d;
+     width: 100%;
+}
+
+.row-cnt img{
+     width: 25%;
+} */
+
+#certificate .container {
+  width: 100%;
+  padding: 40px;
+}
+
+.certi-cnt {
+  display: block;
+  border-bottom: 1px solid #de6228;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.certi-row {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.certi-cnt img {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-right: 0; 
+}
+
+.certi-details h2 {
+  font-size: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.certi-details p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.certi-cnt-right {
+padding-left: 0;
+  border-left: 0;
+}
+
+.prj{
+  display: block;
+  width: 100%;
+}
+.prj-cnt{
+  margin-bottom: 20px;
+}
+#project .container{
+  width: 100%;
+}
+
+

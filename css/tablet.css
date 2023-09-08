@@ -1,0 +1,53 @@
+* {
+  font-size: large;
+}
+
+.avatar {
+  display: none;
+}
+
+#target {
+  padding: 50px 30px;
+}
+
+#personal-info {
+  padding: 50px 30px;
+}
+
+.details-container {
+  grid-template-columns: 1fr 1fr;
+
+  margin: 30px;
+  gap: 30px;
+}
+
+.details-container > div {
+  padding: 20px;
+}
+#experience {
+  grid-area: 1/1/3/2;
+}
+#activity {
+  grid-area: 1/2/2/3;
+}
+#learn {
+  grid-area: 2/2/4/3;
+}
+
+.row-cnt {
+  display: block;
+}
+.cert-details {
+  padding-left: 0;
+  padding-top: 10px;
+}
+.row-cnt img {
+  width: 15em;
+}
+.prj {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+#project .cerr {
+  padding: 20px;
+}

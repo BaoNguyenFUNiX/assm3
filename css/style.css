@@ -1,0 +1,450 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 40px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* img banner use background */
+header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.597), rgba(0, 0, 0, 0.608)),
+    url("../images/banner.jpg");
+  height: 90vh;
+  background-size: cover;
+}
+
+#banner {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  /* color: white !important; */
+  line-height: 65px;
+  width: 100%;
+}
+
+#banner h1,
+#banner span {
+  font-weight: 800;
+  font-size: 50px;
+  color: #ccc;
+}
+
+/* navbar use display:grid to set the layout */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: minmax(50px,200px) minmax(50px,200px) minmax() minmax(50px,200px) minmax(50px,200px); */
+  background-color: #f7f7f7;
+  box-shadow: 0px 6px 6px 0px #888888;
+}
+
+.nav-container a {
+  padding: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-right: 1px solid;
+  font-size: 20px;
+  color: black;
+  font-weight: 750;
+}
+
+.nav-container a:hover {
+  color: #199cdb;
+}
+
+.nav-container a:first-child {
+  border-left: 1px solid;
+}
+
+/* avartar use scale to place on top element */
+.avatar {
+  justify-self: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 0px #7c7676;
+  transform: scale(9);
+  margin: 0 70px;
+}
+
+.bg-grey {
+  background-color: #eeeeee;
+}
+
+/* about and target use grid to separate */
+.abt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 35px;
+  font-size: 20px;
+  grid-template-rows: 450px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+#target {
+  padding: 80px 100px 0 130px;
+}
+
+#personal-info {
+  height: 450px;
+  background-color: #d4d2d2af;
+  padding: 80px 0 20px 100px;
+}
+
+.info {
+  list-style-type: none;
+  display: none;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+/* The detail info use grid to 3 columns and 2 row */
+.details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 150px;
+}
+
+.details-container > div {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.details-container h1 {
+  display: inline-block;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: u;
+}
+
+/* details icon use relative position on the right */
+.details-container i {
+  position: relative;
+  float: right;
+  font-size: 40px;
+  margin-top: -3px;
+  margin-right: 20px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.time {
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.now {
+  background-color: #199cdb;
+  border-left: 10px solid #199cdb;
+  border-right: 10px solid #199cdb;
+  border-top: 2px solid #199cdb;
+  border-bottom: 2px solid #199cdb;
+  border-radius: 10px;
+  color: white;
+}
+
+.list > li {
+  padding-bottom: 30px;
+}
+
+.hobby {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+.border {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #199cdb;
+}
+
+.border i {
+  font-size: 30px;
+  position: relative;
+  top: 13px;
+  left: 10px;
+  color: #199cdb;
+}
+
+.hb-cnt p {
+  padding-top: 10px;
+}
+
+.level-blue {
+  background: #199cdb;
+  display: inline-block;
+  height: 5px;
+  margin-right: 10px;
+  width: 3em;
+  border-radius: 30px;
+}
+
+.level-gray {
+  background: grey;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 3em;
+  border-radius: 30px;
+}
+
+.mark h1 {
+  display: block;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.mark {
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+/* certificate use grid 2 columns in each row  */
+.certi-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.certi-cnt {
+  display: flex;
+}
+
+.certi-row {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #de6228;
+}
+.certi-row:last-child {
+  border: 0;
+}
+.certi-cnt img {
+  width: 44%;
+  padding-right: 20px;
+}
+
+.certi-details h2 {
+  font-size: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.certi-details p{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.certi-cnt-right {
+  padding-left: 30px;
+  border-left: 1px solid #de6228;
+}
+
+/* project layout use grid to set 3 columns */
+.prj {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+}
+
+/* set the img width equal the width of col */
+.prj-cnt img {
+  width: 100%;
+}
+
+.link:hover {
+  background-color: #88888858;
+}
+
+/* use grid to set 2 columns of detail project stand for table */
+.tb {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  padding: 10px;
+}
+
+.prj-title {
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* set border for all the element of projet */
+.br {
+  border: 2px solid #ccc;
+  border-bottom: 0;
+}
+
+.brl {
+  border: 2px solid #ccc;
+}
+
+.prj-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.year {
+  background-color: #199cdb;
+  border: 10px solid #199cdb;
+  border-top: 3px solid #199cdb;
+  border-bottom: 3px solid #199cdb;
+  border-radius: 15px;
+  color: white;
+  margin-right: 20px;
+}
+
+/* flex footer and use margin to set it */
+#footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+#footer > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #199cdb;
+}
+
+#footer > a:hover {
+  color: #7c7676;
+  font-weight: 700;
+}
+
+.input-group {
+  width: 20rem;
+}
+
+#experience .list,
+#learn .list,
+#activity .list,
+#hobby .hb-cnt,
+#language .mark,
+#skill .mark,
+.view-less,
+.view-more {
+  display: none;
+}
